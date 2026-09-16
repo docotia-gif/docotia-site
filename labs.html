@@ -17,7 +17,10 @@
       <div class="mark"><img src="assets/docotia-press-logo.png" alt="Docotia"></div>
       <span class="name">Docotia</span>
     </div>
-    <nav class="primary">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary" id="primaryNav">
       <a href="index.html">Home</a>
       <a href="press.html">Docotia Press</a>
       <a href="labs.html" class="active">Docotia Labs</a>
@@ -47,5 +50,19 @@
   </div>
 </footer>
 
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const primaryNav = document.getElementById('primaryNav');
+menuToggle.addEventListener('click', () => {
+  const isOpen = primaryNav.classList.toggle('open');
+  menuToggle.classList.toggle('open', isOpen);
+  menuToggle.setAttribute('aria-expanded', isOpen);
+});
+primaryNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  primaryNav.classList.remove('open');
+  menuToggle.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}));
+</script>
 </body>
 </html>
