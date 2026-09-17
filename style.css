@@ -212,6 +212,24 @@ section.alt{background:var(--paper-dim);border-top:1px solid var(--line);border-
   border-top:1px solid var(--line);padding-top:24px;margin-top:24px;display:inline-block;
 }
 
+/* ---- Context / quote block ---- */
+.context-block{max-width:680px;margin:0 auto;text-align:left;}
+.context-block h2{font-size:1.7rem;margin:0 0 18px;text-align:center;}
+.context-block p{margin:0 0 18px;}
+.context-block blockquote{
+  margin:28px 0;padding:20px 26px;
+  border-left:3px solid var(--gold);
+  background:var(--paper-dim);
+  font-style:italic;color:var(--ink-soft);
+}
+.context-block blockquote p{margin:0 0 10px;}
+.context-block blockquote p:last-child{margin-bottom:0;}
+.context-block .attribution{
+  font-family:'Inter',sans-serif;font-size:.82rem;color:var(--gray);
+  font-style:normal;text-align:right;display:block;margin-top:12px;
+}
+.context-block .cite-link{color:var(--gold);}
+
 /* ---- Footer ---- */
 footer.site{
   border-top:1px solid var(--line);
