@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LimbView &mdash; Mirror Therapy Session Tracker</title>
+<meta name="description" content="LimbView is a mirror therapy companion app for visual and motor imagery practice. Session tracking with pre/post pain scores, all data stays on your device.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <div class="brand">
+      <div class="mark"><img src="assets/docotia-press-logo.png" alt="Docotia"></div>
+      <span class="name">Docotia</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary" id="primaryNav">
+      <a href="index.html">Home</a>
+      <a href="press.html">Docotia Press</a>
+      <a href="labs.html">Docotia Labs</a>
+      <a href="learning.html">Docotia Learning</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:80px 0 40px;">
+  <div class="wrap">
+    <span class="tag">Docotia Labs</span>
+    <h1 style="font-size:clamp(2rem,4.5vw,2.8rem);">LimbView</h1>
+    <p class="lede">Mirror therapy session tracker for visual and motor imagery practice. Coming to the App Store.</p>
+  </div>
+</section>
+
+<section style="padding:48px 0;">
+  <div class="story">
+
+    <h2>What is mirror therapy?</h2>
+    <p>Mirror therapy is a visual imagery technique where you watch a mirror reflection of your intact limb, creating the visual illusion of bilateral symmetry. This practice engages visual and motor pathways to support recovery, reduce phantom sensation, and build confidence in movement.</p>
+    <p><strong>LimbView</strong> is a companion app that makes mirror therapy sessions easy to track and repeat. Start a session, watch your reflected image, and log how you felt before and after.</p>
+
+    <h2 style="margin-top:2.2em;">Features</h2>
+    <ul style="padding-left:1.3em;">
+      <li><strong>Live mirror display</strong> — real-time reflection of your intact limb with distortion-free optics</li>
+      <li><strong>Session timing</strong> — track how long you practice with a simple timer</li>
+      <li><strong>Pain tracking</strong> — log your pain level (0–10) before and after each session</li>
+      <li><strong>Session history</strong> — review past sessions and track trends over time</li>
+      <li><strong>Export to PDF</strong> — export your session history to share with a therapist or keep as a record</li>
+      <li><strong>Privacy-first</strong> — all data stays on your device, nothing is sent to our servers</li>
+      <li><strong>No distractions</strong> — simple, focused UI designed for therapy, not ads or notifications</li>
+    </ul>
+
+    <h2 style="margin-top:2.2em;">Privacy</h2>
+    <p>LimbView keeps your data on your device. Your session logs, pain scores, and any exported data are yours alone.</p>
+    <ul style="padding-left:1.3em;">
+      <li>All session data is stored locally on your iPhone</li>
+      <li>Camera frames are never saved or transmitted</li>
+      <li>No analytics, no tracking, no ads</li>
+      <li>You control whether and where to export your data</li>
+    </ul>
+    <p><a href="limbview-privacy.html">Read the full privacy policy</a></p>
+
+    <h2 style="margin-top:2.2em;\">Medical disclaimer</h2>
+    <p><em>LimbView is a general wellness tool for visual imagery and motor practice. It is not a medical device, diagnosis, treatment, or cure. Consult a healthcare provider before starting any new therapy or exercise program.</em></p>
+
+    <h2 style="margin-top:2.2em;\">Contact</h2>
+    <p>Questions or feedback? Email <a href="mailto:limbview@docotia.com">limbview@docotia.com</a></p>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Docotia Enterprises LLC</span>
+    <span>
+      <a href="index.html">Home</a> &nbsp;&middot;&nbsp;
+      <a href="labs.html">Labs</a> &nbsp;&middot;&nbsp;
+      <a href="learning.html">Learning</a> &nbsp;&middot;&nbsp;
+      <a href="limbview-privacy.html">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="mailto:limbview@docotia.com">limbview@docotia.com</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const primaryNav = document.getElementById('primaryNav');
+menuToggle.addEventListener('click', () => {
+  const isOpen = primaryNav.classList.toggle('open');
+  menuToggle.classList.toggle('open', isOpen);
+  menuToggle.setAttribute('aria-expanded', isOpen);
+});
+primaryNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  primaryNav.classList.remove('open');
+  menuToggle.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}));
+</script>
+</body>
+</html>
