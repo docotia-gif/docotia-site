@@ -1,0 +1,18 @@
+# Cloudflare Pages custom headers.
+#
+# style.css is served with a long browser-cache TTL by default (max-age=14400,
+# i.e. 4 hours). On a site that gets edited frequently that means a visitor can
+# keep rendering a stale stylesheet for hours after a deploy — new HTML arrives
+# but the old CSS is still applied, so layout changes appear not to have shipped.
+#
+# Force revalidation on every load instead. The browser still sends
+# If-None-Match and gets a cheap 304 when the file is unchanged, so this costs
+# almost nothing on a static site while guaranteeing edits are picked up
+# immediately.
+#
+# Keep this file in the repo root (Cloudflare Pages reads it at deploy time).
+# If a future stylesheet or script is added and should never be stale, add its
+# path here the same way.
+
+/style.css
+  Cache-Control: public, max-age=0, must-revalidate
