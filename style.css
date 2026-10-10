@@ -198,15 +198,18 @@ section.alt{background:var(--paper-dim);border-top:1px solid var(--line);border-
 
 /* ---- App page: portrait video beside intro copy ---- */
 .app-layout{
-  display:grid;grid-template-columns:clamp(340px,50%,560px) 1fr;gap:48px;align-items:start;
+  display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:start;
 }
-/* Size a 9:16 video to the larger of the column width and a height that
-   still fits on screen, so the whole clip is visible without scrolling. */
+/* A 9:16 video's width is always 0.5625x its height, so in a side-by-side
+   layout it is height-limited: sizing by column width alone makes it taller
+   than the screen. Size it by viewport height instead, but clamp a floor and
+   ceiling so it is never unusably small on a short window and never absurdly
+   wide on a tall one. The `auto` grid column then shrinks to the video, so
+   there is no dead gap between the video and the copy. */
 .video-portrait{
   position:relative;
   aspect-ratio:9/16;
-  width:min(100%, calc(84vh * 0.5625));
-  margin:0 auto;
+  width:clamp(380px, calc(84vh * 0.5625), 560px);
   overflow:hidden;
   border:1px solid var(--line);background:#000;
 }
@@ -216,9 +219,9 @@ section.alt{background:var(--paper-dim);border-top:1px solid var(--line);border-
   margin:12px 0 0;text-align:center;
 }
 
-@media (max-width:860px){
+@media (max-width:900px){
   .app-layout{grid-template-columns:1fr;gap:36px;}
-  .video-portrait{max-width:420px;margin:0 auto;}
+  .video-portrait{width:clamp(300px, 84vw, 440px);margin:0 auto;}
 }
 
 /* ---- Coming soon pages ---- */
