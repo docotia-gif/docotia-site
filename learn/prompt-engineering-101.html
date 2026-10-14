@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompt Engineering 101 — Docotia Learning</title>
+<meta name="description" content="A free 4-week beginner's course on prompt engineering. Learn to communicate with AI tools like Google Gemini clearly enough to get genuinely useful results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=a1b2c3d4">
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <div class="brand">
+      <div class="mark"><img src="../assets/docotia-press-logo.png" alt="Docotia"></div>
+      <span class="name">Docotia</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary" id="primaryNav">
+      <a href="../index.html">Home</a>
+      <a href="../press.html">Docotia Press</a>
+      <a href="../labs.html">Docotia Labs</a>
+      <a href="index.html">Docotia Learning</a>
+    </nav>
+  </div>
+</header>
+
+<section class="course-header">
+  <div class="wrap">
+    <span class="tag">Course 1 · Free</span>
+    <h1>Prompt Engineering 101</h1>
+    <p class="subtitle">A Beginner's Course for the AI Age</p>
+    <p class="updated">Last updated: October 2026</p>
+  </div>
+</section>
+
+<div class="course-body">
+
+<p>In today's world, artificial intelligence is everywhere — from virtual assistants to creative tools, from research helpers to coding companions. Prompt engineering is the new literacy of the AI age. It's the skill that lets you communicate with AI tools like Google Gemini clearly enough to get genuinely useful results.</p>
+
+<p>Whether you're writing essays, studying for exams, brainstorming business ideas, or solving complex problems, knowing how to prompt well is like having a superpower. This course will take you from complete beginner to confident user in four weeks — using only free tools.</p>
+
+<h2>What is Prompt Engineering?</h2>
+
+<p>A prompt is any instruction, question, or piece of text you give to an AI. Prompt engineering is the practice of crafting those instructions intentionally to get the best possible output.</p>
+
+<p>Think of it like giving directions. If you tell someone "go to the store," you might get a confused look. But if you say "Turn left out the driveway, drive three blocks, and stop at the Walmart on the corner," they'll get there every time. Same principle with AI.</p>
+
+<p><strong>The core truth:</strong> The quality of your output is almost entirely determined by the quality of your input.</p>
+
+<h2>What You'll Need</h2>
+
+<ul>
+  <li>A Google account (free) — create one at <a href="https://accounts.google.com" target="_blank" rel="noopener">accounts.google.com</a> if you don't have one</li>
+  <li>Google Gemini — your AI tool for this course: <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> (completely free)</li>
+  <li>No coding required — everything in this course is plain English</li>
+  <li>A notebook or doc to keep your experiments and observations</li>
+  <li>A curious mind — the best learning happens when you try things, break them, and try again</li>
+</ul>
+
+<h2>The Fundamentals</h2>
+
+<p>Before diving into assignments, understand these seven principles. They're the foundation of everything.</p>
+
+<h3>1. Clarity — Be Specific, Not Vague</h3>
+
+<p>Vague prompts produce vague answers. The more specific you are, the better the output.</p>
+
+<ul>
+  <li><em>Weak:</em> "Tell me about history."</li>
+  <li><em>Strong:</em> "Summarize the main causes of World War I in 3 bullet points, written for a high school student."</li>
+</ul>
+
+<h3>2. Context — Give the AI Background</h3>
+
+<p>AI doesn't know your situation unless you tell it. A few sentences of context dramatically improve results.</p>
+
+<ul>
+  <li><em>Weak:</em> "Write me an email."</li>
+  <li><em>Strong:</em> "I'm a college freshman writing to my professor to ask for a one-day extension on my essay due to a family emergency. Write a professional but honest email."</li>
+</ul>
+
+<h3>3. Role Assignment — Tell the AI Who It Is</h3>
+
+<p>Assigning a role to the AI shapes how it responds. Use "Act as a..." to unlock specialized expertise.</p>
+
+<ul>
+  <li>"Act as a nutrition expert and help me plan a week of healthy college meals under $50."</li>
+  <li>"Act as a Socratic tutor and help me understand photosynthesis by asking me questions."</li>
+</ul>
+
+<h3>4. Format Control — Shape the Output</h3>
+
+<p>Tell the AI exactly how you want the information presented. Tables, bullet points, numbered lists, outlines — the AI can produce any format.</p>
+
+<ul>
+  <li>"Give me this information as a numbered list."</li>
+  <li>"Summarize this in a two-column table with Pros and Cons."</li>
+  <li>"Write this as a 5-paragraph essay with an intro, three body paragraphs, and a conclusion."</li>
+</ul>
+
+<h3>5. Iteration — Your First Prompt Isn't Your Last</h3>
+
+<p>No one writes the perfect prompt on the first try. Treat it like a conversation. Refine based on what you get back.</p>
+
+<ul>
+  <li>"That's good, but make it shorter and more casual."</li>
+  <li>"Add two more examples and make the tone more professional."</li>
+</ul>
+
+<h3>6. Zero-Shot vs. Few-Shot Prompting</h3>
+
+<ul>
+  <li><strong>Zero-shot:</strong> You just ask. No examples. ("Classify this sentence as positive or negative.")</li>
+  <li><strong>Few-shot:</strong> You give examples first to show the AI what you want. ("Here are three examples of how I want you to classify sentences: [examples]. Now classify this one: ...")</li>
+</ul>
+
+<p>Few-shot prompting is dramatically more powerful when you need a specific style or format.</p>
+
+<h3>7. Chain of Thought — Ask the AI to Think Step by Step</h3>
+
+<p>For complex problems, tell the AI to reason through them rather than jump to an answer.</p>
+
+<ul>
+  <li>"Think through this step by step before giving me your final answer."</li>
+  <li>"Walk me through your reasoning as you solve this math problem."</li>
+</ul>
+
+<p>This simple instruction often doubles or triples the quality of the answer on hard questions.</p>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 1: Getting Started (Week 1)</h2>
+
+<p><strong>Goal:</strong> Get comfortable with Gemini's interface, understand what prompts are, and practice the basics.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Start here (reading): <a href="https://learnprompting.org/docs/basics/introduction" target="_blank" rel="noopener">Learn Prompting Beginner Guide</a></li>
+  <li>Video (30 min): <a href="https://www.youtube.com/watch?v=RMTJee3EyxE" target="_blank" rel="noopener">Simplilearn Prompt Engineering Tutorial for Beginners</a></li>
+  <li>Course (free, no coding): <a href="https://www.simplilearn.com/prompt-engineering-free-course-skillup" target="_blank" rel="noopener">Simplilearn Free Prompt Engineering Course</a></li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 1-A: First Contact</span>
+  <p><strong>Goal:</strong> Get familiar with Gemini and observe how different prompt styles produce different results.</p>
+  <p>Open Gemini and try these three prompts back to back:</p>
+  <ol>
+    <li>"What is photosynthesis?"</li>
+    <li>"Explain photosynthesis to a 10-year-old using a simple analogy."</li>
+    <li>"Explain photosynthesis in one sentence, then in one paragraph, then in a detailed breakdown for a biology student."</li>
+  </ol>
+  <p><strong>Observe:</strong> How dramatically different are the outputs? Which is most useful and why?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 1-B: The Vague vs. Specific Experiment</span>
+  <p><strong>Goal:</strong> Experience firsthand how specificity changes output quality.</p>
+  <p>Pick any topic you're interested in (your major, a hobby, a current event). Ask Gemini about it two ways:</p>
+  <ol>
+    <li>One very vague prompt (3 words or fewer)</li>
+    <li>One specific prompt with context, format, and audience specified</li>
+  </ol>
+  <p><strong>Write down:</strong> What changed? What would you tell a friend about "being specific" based on what you saw?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 1-C: Role Assignment Exploration</span>
+  <p><strong>Goal:</strong> Practice assigning roles to unlock different expertise.</p>
+  <p>Try these role-based prompts in Gemini:</p>
+  <ol>
+    <li>"Act as a personal trainer. I'm a 19-year-old college student with no gym equipment. Give me a 20-minute morning workout I can do in my dorm room."</li>
+    <li>"Act as a study coach. I have a biology exam in 3 days and I'm overwhelmed. Give me a realistic 3-day study plan."</li>
+    <li>Now write your own role-based prompt for something relevant to YOUR life right now.</li>
+  </ol>
+  <p><strong>Observe:</strong> How does the role affect the tone, depth, and type of advice?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 1-D: Format Control Practice</span>
+  <p><strong>Goal:</strong> Learn to control the shape and structure of AI output.</p>
+  <p>Ask Gemini the same question in three different formats:</p>
+  <ul>
+    <li>"What are the pros and cons of social media for college students?" (no format specified)</li>
+    <li>"What are the pros and cons of social media for college students? Give your answer as a two-column table."</li>
+    <li>"What are the pros and cons of social media for college students? Give me exactly 5 pros and 5 cons as numbered lists."</li>
+  </ul>
+  <p><strong>Which format would you actually use? Why?</strong></p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 2: Core Techniques (Week 2)</h2>
+
+<p><strong>Goal:</strong> Master iteration, few-shot prompting, and chain-of-thought. Start using AI for real college tasks.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Video (watch first 45 min): <a href="https://www.youtube.com/watch?v=2BpCk4d2Cc0" target="_blank" rel="noopener">Tech With Tim – Prompt Engineering Full Course</a></li>
+  <li>Course: <a href="https://www.codecademy.com/learn/learn-prompt-engineering" target="_blank" rel="noopener">Codecademy Learn Prompt Engineering</a> (free, 3 hours)</li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 2-A: The Iteration Loop</span>
+  <p><strong>Goal:</strong> Practice refining prompts through multiple rounds.</p>
+  <p>Start with this prompt: "Help me write an introduction paragraph for an essay." Then iterate at least 4 times by adding more context, changing the tone, specifying the topic, adjusting length, etc.</p>
+  <p>Document each version of your prompt and the output. By round 4, you should have something you'd actually consider using.</p>
+  <p><strong>Reflect:</strong> What did you add/change each round and why?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 2-B: Few-Shot Prompting</span>
+  <p><strong>Goal:</strong> Teach the AI your style with examples.</p>
+  <p>Imagine you write in a specific casual style. Give Gemini 2–3 examples of that style, then ask it to write something new in that same voice.</p>
+  <p>Try it with: Instagram captions, text messages to a friend, or your own essay writing style.</p>
+  <p><strong>Prompt template:</strong> "Here are three examples of how I write captions: [example 1], [example 2], [example 3]. Now write a caption for a photo of [describe photo] in the same style."</p>
+  <p><strong>Observe:</strong> How close does the AI get to your actual voice?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 2-C: Chain of Thought — Solving a Hard Problem</span>
+  <p><strong>Goal:</strong> See how "think step by step" improves complex reasoning.</p>
+  <p>Give Gemini a logic puzzle, a math word problem, or a decision you're actually facing. Ask it twice:</p>
+  <ol>
+    <li>Just ask for the answer directly</li>
+    <li>Add: "Think through this step by step before giving me your final answer."</li>
+  </ol>
+  <p><strong>Compare the two responses.</strong> Is the step-by-step version more accurate or trustworthy?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 2-D: Build a Study Guide</span>
+  <p><strong>Goal:</strong> Apply prompt engineering to a real academic task.</p>
+  <p>Pick a subject you're currently studying or want to learn. Ask Gemini: "Act as an expert professor in [subject]. I'm a college freshman. Create a one-page study guide for the topic of [specific topic]. Include: key vocabulary with definitions, 3 core concepts explained simply, 5 review questions, and one common misconception students have."</p>
+  <p><strong>Iterate:</strong> Adjust the level of difficulty, add or remove sections, ask it to make it more visual or concise.</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 3: Advanced Strategies (Week 3)</h2>
+
+<p><strong>Goal:</strong> Push into more sophisticated techniques — personas, prompt chaining, and using AI as a thinking partner rather than just an answer machine.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Video (comprehensive): <a href="https://www.youtube.com/watch?v=LWiMwhDZ9as" target="_blank" rel="noopener">Zero To Mastery – Learn Prompt Engineering</a> (watch first 2 hours)</li>
+  <li>Reading (intermediate): <a href="https://learnprompting.org" target="_blank" rel="noopener">Learn Prompting full guide</a></li>
+  <li>Optional (if you know Python): <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank" rel="noopener">DeepLearning.AI with Andrew Ng</a></li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 3-A: Prompt Chaining</span>
+  <p><strong>Goal:</strong> Break complex tasks into a chain of connected prompts.</p>
+  <p>Research a topic in 4 chained steps in the same Gemini conversation:</p>
+  <ol>
+    <li>"Give me an overview of [topic] in 3 bullet points."</li>
+    <li>"Now go deeper on [the most interesting bullet point]."</li>
+    <li>"What are the biggest debates or controversies around this topic?"</li>
+    <li>"Summarize everything we've discussed in one paragraph I could use as a notes entry."</li>
+  </ol>
+  <p>Notice how each prompt builds on the last. This is prompt chaining — one of the most powerful techniques.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 3-B: Debate Prep</span>
+  <p><strong>Goal:</strong> Use AI as an intellectual sparring partner.</p>
+  <p>Pick a topic you have an opinion on. Ask Gemini: "I believe [your position]. Act as a smart, respectful devil's advocate and give me the strongest possible arguments against my position. Then tell me which of my counterarguments you think holds up best."</p>
+  <p>This is one of the most powerful study/critical-thinking uses of AI — not to confirm your beliefs, but to stress-test them.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 3-C: The Hallucination Detector</span>
+  <p><strong>Goal:</strong> Learn AI's biggest weakness — making things up.</p>
+  <p>Ask Gemini about a very specific factual topic (a historical date, a scientific study, a legal detail). Then fact-check its answer using Google or Wikipedia.</p>
+  <p><strong>Did it get everything right? Did it make up any details? Write a short reflection:</strong> When should you trust AI outputs and when should you always verify?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 3-D: Persona Creation</span>
+  <p><strong>Goal:</strong> Build a persistent character for a creative or professional task.</p>
+  <p>Ask Gemini to act as a specific persona for an extended conversation. Examples:</p>
+  <ul>
+    <li>"You are my pre-med advisor. I'm a biology freshman. Ask me about my goals and then advise me on course selection for next semester."</li>
+    <li>"You are a fictional mentor character in a sci-fi novel I'm writing. Stay in character throughout our conversation."</li>
+  </ul>
+  <p>Have a full back-and-forth conversation. Observe how well the AI maintains the persona and how to correct it when it breaks character.</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 4: Real-World Applications (Week 4)</h2>
+
+<p><strong>Goal:</strong> Apply everything you've learned to real-world college tasks. By the end of this week, you should be using Gemini as a regular part of your workflow.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Video: <a href="https://www.youtube.com/watch?v=GrX4WfT5FI4" target="_blank" rel="noopener">freeCodeCamp – Prompt Engineering Tutorial</a></li>
+  <li>Course (by Google): <a href="https://www.coursera.org/specializations/prompting-essentials-google" target="_blank" rel="noopener">Google Prompting Essentials on Coursera</a></li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 4-A: Essay Assistant</span>
+  <p><strong>Goal:</strong> Use AI to help (not replace) your writing process.</p>
+  <p>Take an essay topic from one of your classes (or make one up). Use Gemini to:</p>
+  <ol>
+    <li>Brainstorm your thesis statement (give it 3 options)</li>
+    <li>Create an outline</li>
+    <li>Draft one body paragraph</li>
+    <li>Get feedback on that paragraph's argument</li>
+  </ol>
+  <p><strong>Important:</strong> The AI is a collaborator, not the author. Your thinking drives it. Does the final paragraph sound like you?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 4-B: Email Drafting</span>
+  <p><strong>Goal:</strong> Write professional emails faster.</p>
+  <p>Think of a real email you need to send (to a professor, a club, a future employer, a landlord). Ask Gemini: "I need to send an email to [recipient] about [situation]. The tone should be [professional/friendly/formal]. Key points I want to include: [list]. Draft this email in under 150 words."</p>
+  <p>Edit the draft to sound more like you. What did you change?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 4-C: Flashcard Factory</span>
+  <p><strong>Goal:</strong> Turn any reading into instant study materials.</p>
+  <p>Take a page or two from a textbook, article, or lecture notes. Paste it into Gemini and ask: "Convert this content into 10 flashcard-style Q&amp;A pairs. Format each as: Q: [question] / A: [answer]. Focus on the most testable concepts."</p>
+  <p>Try this with actual upcoming exam material. How long did it take vs. making them manually?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 4-D: Code Helper (No Experience Required)</span>
+  <p><strong>Goal:</strong> See how non-coders can use AI to automate small tasks.</p>
+  <p>Ask Gemini to write a simple script or formula for something practical:</p>
+  <ul>
+    <li>"Write a Google Sheets formula that calculates my GPA based on grades I enter in column A and credit hours in column B."</li>
+    <li>"Write a simple Python script that takes a list of names and outputs them in alphabetical order. Explain each line as a comment."</li>
+  </ul>
+  <p>You don't need to understand all the code. The goal is to see that AI makes technical tools accessible even to non-technical people.</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Tips for Getting Better</h2>
+
+<div class="tips-box">
+<ol>
+  <li><strong>Iterate ruthlessly.</strong> The first response is a draft, not a final answer. Keep refining until you get what you need.</li>
+  <li><strong>Save your best prompts.</strong> When you find a prompt formula that works great, write it down. Build a personal prompt library.</li>
+  <li><strong>Give examples whenever possible.</strong> "Write something like this: [example]" almost always outperforms describing what you want in the abstract.</li>
+  <li><strong>Be honest about what you don't know.</strong> Telling the AI "I'm a beginner with no background in X" will get you a more appropriate response than letting it assume expertise.</li>
+  <li><strong>Ask it to critique its own output.</strong> "What are the weaknesses in this response?" often surfaces issues the AI missed on the first pass.</li>
+  <li><strong>Never paste sensitive personal information into any AI tool</strong> — no SSNs, passwords, private health info, or anything you'd be embarrassed to have public.</li>
+  <li><strong>Use AI as a thinking partner, not a thinking replacement.</strong> The students who get the most out of AI are the ones using it to go deeper, not to avoid doing the work.</li>
+</ol>
+</div>
+
+<h2>Further Reading &amp; Resources</h2>
+
+<h3>Free Courses</h3>
+
+<ul>
+  <li><a href="https://www.coursera.org/specializations/prompting-essentials-google" target="_blank" rel="noopener">Google Prompting Essentials (Coursera)</a> — by Google, earns a certificate</li>
+  <li><a href="https://learnprompting.org/docs/basics/introduction" target="_blank" rel="noopener">Learn Prompting</a> — best free written guide, constantly updated</li>
+  <li><a href="https://www.codecademy.com/learn/learn-prompt-engineering" target="_blank" rel="noopener">Codecademy Learn Prompt Engineering</a> — 3 hours, interactive, 3 projects, free</li>
+  <li><a href="https://www.simplilearn.com/prompt-engineering-free-course-skillup" target="_blank" rel="noopener">Simplilearn Free Prompt Engineering Course</a> — no coding required, certificate included</li>
+  <li><a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank" rel="noopener">DeepLearning.AI with Andrew Ng</a> (requires basic Python)</li>
+</ul>
+
+<h3>YouTube Videos</h3>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=2BpCk4d2Cc0" target="_blank" rel="noopener">Tech With Tim – Prompt Engineering Full Course</a> (March 2026)</li>
+  <li><a href="https://www.youtube.com/watch?v=LWiMwhDZ9as" target="_blank" rel="noopener">Zero To Mastery – Prompt Engineering Crash Course</a> (5 hrs)</li>
+  <li><a href="https://www.youtube.com/watch?v=GrX4WfT5FI4" target="_blank" rel="noopener">freeCodeCamp – Prompt Engineering Tutorial</a></li>
+  <li><a href="https://www.youtube.com/watch?v=RMTJee3EyxE" target="_blank" rel="noopener">Simplilearn – Prompt Engineering Tutorial for Beginners</a></li>
+</ul>
+
+<h3>Articles &amp; Reference</h3>
+
+<ul>
+  <li><a href="https://cloud.google.com/discover/what-is-prompt-engineering" target="_blank" rel="noopener">Google Cloud – What is Prompt Engineering</a></li>
+  <li><a href="https://learnprompting.org" target="_blank" rel="noopener">Learn Prompting</a> (full reference site)</li>
+</ul>
+
+<div class="divider">· · ·</div>
+
+<p><em>Part 1 of the AI Fundamentals Series. Uses Google Gemini (free) for all assignments.</em></p>
+
+<p><em>Next: <a href="scaffolding-101.html">Scaffolding 101 &rarr;</a></em></p>
+
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Docotia Enterprises LLC</span>
+    <span>
+      <a href="../index.html">Home</a> &nbsp;&middot;&nbsp;
+      <a href="../press.html">Press</a> &nbsp;&middot;&nbsp;
+      <a href="../labs.html">Labs</a> &nbsp;&middot;&nbsp;
+      <a href="index.html">Learning</a> &nbsp;&middot;&nbsp;
+      <a href="../privacy.html">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="mailto:learning@docotia.com">learning@docotia.com</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const primaryNav = document.getElementById('primaryNav');
+menuToggle.addEventListener('click', () => {
+  const isOpen = primaryNav.classList.toggle('open');
+  menuToggle.classList.toggle('open', isOpen);
+  menuToggle.setAttribute('aria-expanded', isOpen);
+});
+primaryNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  primaryNav.classList.remove('open');
+  menuToggle.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}));
+</script>
+</body>
+</html>

@@ -267,3 +267,124 @@ footer.site{
 footer.site .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
 footer.site a{color:var(--gray);}
 footer.site a:hover{color:var(--ink);}
+
+/* ---- Learning hub ---- */
+.learning-hero{
+  text-align:center;padding:80px 0 56px;
+  border-bottom:1px solid var(--line);
+}
+.learning-hero .tag{
+  font-family:'Inter',sans-serif;font-size:.78rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold);display:block;margin-bottom:16px;
+}
+.learning-hero h1{font-size:clamp(2rem,4.5vw,3rem);margin:0 0 16px;}
+.learning-hero p{
+  font-family:'Inter',sans-serif;color:var(--ink-soft);
+  max-width:620px;margin:0 auto;font-size:1.05rem;
+}
+.course-cards{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+  max-width:var(--max);margin:0 auto;padding:56px 28px;
+}
+.course-card{
+  border:1px solid var(--line);background:var(--paper);
+  padding:32px 28px;display:flex;flex-direction:column;gap:14px;
+  transition:border-color .15s ease;
+}
+.course-card:hover{border-color:var(--gold);}
+.course-card .num{
+  font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--gold);
+}
+.course-card h3{font-size:1.35rem;margin:0;}
+.course-card p{
+  font-family:'Inter',sans-serif;font-size:.9rem;color:var(--ink-soft);
+  margin:0;flex:1;
+}
+.course-card .meta{
+  font-family:'Inter',sans-serif;font-size:.78rem;color:var(--gray);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.course-card a.go{
+  font-family:'Inter',sans-serif;font-size:.85rem;color:var(--gold);
+  text-decoration:none;
+}
+.course-card a.go:hover{color:var(--ink);}
+@media (max-width:820px){
+  .course-cards{grid-template-columns:1fr;}
+}
+
+/* ---- Course page ---- */
+.course-header{
+  text-align:center;padding:72px 0 48px;
+  border-bottom:1px solid var(--line);
+}
+.course-header .tag{
+  font-family:'Inter',sans-serif;font-size:.75rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gold);display:block;margin-bottom:14px;
+}
+.course-header h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 12px;}
+.course-header .subtitle{
+  font-family:'Inter',sans-serif;color:var(--ink-soft);
+  font-size:1.05rem;margin:0 0 8px;
+}
+.course-header .updated{
+  font-family:'Inter',sans-serif;font-size:.78rem;color:var(--gray);
+}
+.course-body{
+  max-width:720px;margin:0 auto;padding:48px 28px 72px;
+}
+.course-body h2{
+  font-size:1.5rem;margin:48px 0 16px;
+  padding-bottom:8px;border-bottom:1px solid var(--line);
+}
+.course-body h2:first-child{margin-top:0;}
+.course-body h3{
+  font-size:1.2rem;margin:32px 0 12px;
+}
+.course-body p{margin:0 0 16px;font-size:1.05rem;}
+.course-body ul,.course-body ol{
+  margin:0 0 16px;padding-left:24px;
+}
+.course-body li{margin-bottom:8px;}
+.course-body strong{font-weight:600;}
+.course-body em{font-style:italic;}
+.course-body a{color:var(--gold);text-decoration:underline;}
+.course-body a:hover{color:var(--ink);}
+.course-body hr{
+  border:none;border-top:1px solid var(--line);
+  margin:40px 0;
+}
+.course-body blockquote{
+  margin:24px 0;padding:16px 22px;
+  border-left:3px solid var(--gold);
+  background:var(--paper-dim);
+  font-style:italic;color:var(--ink-soft);
+}
+.course-body blockquote p{margin:0 0 8px;font-size:1rem;}
+.course-body blockquote p:last-child{margin-bottom:0;}
+.course-body .divider{
+  text-align:center;color:var(--line);
+  font-size:1.4rem;letter-spacing:.3em;
+  margin:40px 0;user-select:none;
+}
+.assignment{
+  border:1px solid var(--line);background:var(--paper-dim);
+  padding:24px 28px;margin:0 0 20px;
+}
+.assignment .label{
+  font-family:'Inter',sans-serif;font-size:.72rem;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--gold);display:block;margin-bottom:10px;
+}
+.assignment p:last-child{margin-bottom:0;}
+.tips-box{
+  border:1px solid var(--line);background:var(--paper-dim);
+  padding:24px 28px;margin:32px 0;
+}
+.tips-box h3{margin-top:0;}
+.tips-box ol{margin-bottom:0;}
+@media (max-width:720px){
+  .course-body{padding:36px 20px 56px;}
+  .course-body h2{font-size:1.3rem;}
+}

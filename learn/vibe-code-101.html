@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vibe Code 101 — Docotia Learning</title>
+<meta name="description" content="A free 4-week course on vibe coding. Build and ship real software by having a conversation with AI — no coding background required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=a1b2c3d4">
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <div class="brand">
+      <div class="mark"><img src="../assets/docotia-press-logo.png" alt="Docotia"></div>
+      <span class="name">Docotia</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary" id="primaryNav">
+      <a href="../index.html">Home</a>
+      <a href="../press.html">Docotia Press</a>
+      <a href="../labs.html">Docotia Labs</a>
+      <a href="index.html">Docotia Learning</a>
+    </nav>
+  </div>
+</header>
+
+<section class="course-header">
+  <div class="wrap">
+    <span class="tag">Course 3 · Free</span>
+    <h1>Vibe Code 101</h1>
+    <p class="subtitle">Building Real Software Without Learning to Code</p>
+    <p class="updated">Last updated: October 2026</p>
+  </div>
+</section>
+
+<div class="course-body">
+
+<p>If Prompt Engineering 101 taught you how to talk to AI, and Scaffolding 101 taught you how to build systems around it, Vibe Code 101 is where you use both to build actual software products.</p>
+
+<p>Vibe coding is building apps and websites by having a conversation with AI instead of writing code yourself. You describe what you want in plain English. The AI writes the code. You test it, give feedback, and keep directing. The AI keeps building. That's the whole model — and it works.</p>
+
+<p>The term was coined by AI researcher Andrej Karpathy in early 2025. He described it as "fully giving in to the vibes" — trusting the AI to handle the technical details while you focus on the idea and the vision. Thousands of non-technical founders have already used this approach to build and ship real products. This course will take you from zero to a live, deployed app in four weeks — no coding experience required.</p>
+
+<div class="divider">· · ·</div>
+
+<h2>What is Vibe Coding?</h2>
+
+<p>Vibe coding flips the traditional model of software development. In the old model, you had to learn syntax, frameworks, and years of technical concepts before you could build anything real. In the vibe coding model, you are the director and the AI is the developer.</p>
+
+<p>The mental model that matters:</p>
+
+<p>Think of yourself as a CEO, not an employee. A CEO doesn't know how to lay every brick in their building — but they know what the building should look like, what it should do, and when something is wrong. Vibe coding is the same:</p>
+
+<ul>
+  <li>You decide what the app does, who it's for, and what it looks like</li>
+  <li>The AI writes the actual code</li>
+  <li>You test it, give feedback, and guide the fixes</li>
+  <li>The AI keeps building</li>
+</ul>
+
+<p>The skill you're actually developing isn't coding. It's:</p>
+
+<ol>
+  <li>Describing ideas clearly (you already practiced this in Prompt Engineering 101)</li>
+  <li>Knowing what "good enough" looks like</li>
+  <li>Breaking big goals into small steps (you practiced this in Scaffolding 101)</li>
+  <li>Giving useful feedback when something is wrong</li>
+</ol>
+
+<p>None of those require a Computer Science degree.</p>
+
+<h2>What You'll Need</h2>
+
+<p><strong>Free tools (start here — no installation needed):</strong></p>
+
+<ul>
+  <li><a href="https://bolt.new" target="_blank" rel="noopener">Bolt.new</a> — Your primary tool for this course. Works entirely in your browser. Type what you want and it builds it.</li>
+  <li><a href="https://replit.com" target="_blank" rel="noopener">Replit</a> — Browser-based coding environment with AI built in. Great for experimenting.</li>
+</ul>
+
+<p><strong>When you're ready to go deeper (install on your laptop):</strong></p>
+
+<ul>
+  <li><a href="https://cursor.com" target="_blank" rel="noopener">Cursor</a> — An AI-powered code editor. Free tier available. This is where serious vibe coders work.</li>
+  <li><a href="https://code.visualstudio.com" target="_blank" rel="noopener">VS Code</a> — Free industry-standard editor (Cursor is built on top of it)</li>
+</ul>
+
+<p><strong>Free services for publishing and databases:</strong></p>
+
+<ul>
+  <li><a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a> — Publishes your app to the internet with a real URL. Free.</li>
+  <li><a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> — Stores your app's data and handles user logins. Free to start.</li>
+  <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a> — Saves your code history in the cloud. Free. Think "Dropbox for code."</li>
+</ul>
+
+<p><strong>For making money later:</strong></p>
+
+<ul>
+  <li><a href="https://stripe.com" target="_blank" rel="noopener">Stripe</a> — Handles payments and subscriptions. Add this when you're ready to charge.</li>
+</ul>
+
+<p>No coding experience required. All assignments in this course use Bolt.new — it runs entirely in your browser with zero setup.</p>
+
+<h2>The Fundamentals</h2>
+
+<h3>1. You Are the Director — AI Is the Developer</h3>
+
+<p>The most important mindset shift in vibe coding: you are not trying to learn how to code. You are learning how to communicate clearly enough that the AI can build exactly what you're imagining. Every skill from Prompt Engineering 101 and Scaffolding 101 applies directly here.</p>
+
+<h3>2. Describe the Problem, Not the Solution</h3>
+
+<p>The biggest mistake beginners make is trying to tell the AI HOW to build something instead of WHAT to build.</p>
+
+<ul>
+  <li><em>Wrong:</em> "Add a React useState hook for the modal"</li>
+  <li><em>Right:</em> "When someone clicks the button, a popup should appear showing the user's details"</li>
+</ul>
+
+<p>Let the AI decide the technical implementation. Your job is to describe behavior, not code.</p>
+
+<h3>3. Build Feature by Feature (The Vibe Coding Workflow)</h3>
+
+<p>Never try to build the whole app in one prompt. Build incrementally:</p>
+
+<ol>
+  <li>Start with the simplest possible version that works</li>
+  <li>Test it — does it do what you expected?</li>
+  <li>Add one feature at a time</li>
+  <li>Fix what's broken before adding more</li>
+  <li>Repeat</li>
+</ol>
+
+<p>This is how professional developers work too — they just call it "iterative development."</p>
+
+<h3>4. Feedback Like a Human</h3>
+
+<p>When something doesn't work, describe the problem in plain English exactly like you'd tell a coworker:</p>
+
+<ul>
+  <li>"That's almost right but the colors look off"</li>
+  <li>"The button works but it's too big on mobile"</li>
+  <li>"This crashes when I click Save after entering a date — here's what happened..."</li>
+</ul>
+
+<p>The more specific your feedback, the faster it gets fixed.</p>
+
+<h3>5. The Vibe Coding Stack (What Powers Your App)</h3>
+
+<p>Every web app has the same basic anatomy:</p>
+
+<ul>
+  <li><strong>Frontend</strong> — what users see (buttons, pages, design)</li>
+  <li><strong>Backend</strong> — what users don't see (database, servers, logic)</li>
+  <li><strong>Database</strong> — where data is stored (user accounts, saved content)</li>
+  <li><strong>Hosting</strong> — where your app lives on the internet</li>
+</ul>
+
+<p>A beginner's free stack:</p>
+
+<ul>
+  <li>Bolt.new or Cursor → build the app</li>
+  <li>Supabase → database and user login</li>
+  <li>Vercel → host it on the internet</li>
+  <li>Stripe → collect payments (when you're ready)</li>
+</ul>
+
+<p>You don't need to understand every layer. You just need to know it exists.</p>
+
+<h3>6. The Economics of Building</h3>
+
+<p>This is the part that makes vibe coding genuinely exciting:</p>
+
+<ul>
+  <li>A simple SaaS tool charging $29/month × 100 customers = $2,900/month recurring</li>
+  <li>Total cost to run: $0–25/month until you have significant traffic</li>
+  <li>Time to build an MVP: days to weeks, not months</li>
+</ul>
+
+<p>The barrier to entry has collapsed. The bottleneck is now your ideas, not your technical skills.</p>
+
+<h3>7. Prompting for Code (Different from Regular Prompting)</h3>
+
+<p>Code prompting has some specific rules:</p>
+
+<ul>
+  <li>Be explicit about what happens when users do X — describe every interaction</li>
+  <li>Specify the design — colors, layout, mobile vs. desktop, what it should feel like</li>
+  <li>Describe your user — "this is for college students who aren't technical"</li>
+  <li>One feature at a time — don't try to build everything in one message</li>
+  <li>Include examples — "something like Notion's sidebar" tells the AI more than a paragraph of description</li>
+</ul>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 1: Your First Working App (Week 1)</h2>
+
+<p><strong>Goal:</strong> Get comfortable with Bolt.new, understand the vibe coding feedback loop, and ship your first working app — even if it's small.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Watch first (20 min): Alex Finn – Vibe Coding Introduction (@AlexFinnOfficial on YouTube) — search "Alex Finn vibe coding beginner"</li>
+  <li>Watch: Fireship – Vibe Coding Explained — search "Fireship vibe coding"</li>
+  <li>Reference: Bolt.new docs — <a href="https://bolt.new" target="_blank" rel="noopener">bolt.new</a> (built into the interface)</li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 1-A: Hello, Bolt</span>
+  <p><strong>Goal:</strong> Experience vibe coding for the first time.</p>
+  <p>Go to <a href="https://bolt.new" target="_blank" rel="noopener">bolt.new</a> and type: "Build me a simple personal homepage with my name, a one-paragraph bio, and three links (one to LinkedIn, one to Instagram, one to email). Use a clean modern design with a dark background and white text."</p>
+  <p>Fill in your real info. Watch it build. Click around the preview. Does it work?</p>
+  <p>Now iterate: "Change the background color to navy blue. Make the links open in a new tab. Add a small headshot image placeholder."</p>
+  <p><strong>Observe:</strong> What just happened? How long would this have taken to build from scratch without AI?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 1-B: The Feedback Loop</span>
+  <p><strong>Goal:</strong> Practice the build → test → fix → improve cycle.</p>
+  <p>Build a simple to-do list app: "Build a to-do list web app. Users can type a task and press Enter to add it to the list. Each task has a checkbox to mark it complete and an X button to delete it. Completed tasks should show with a strikethrough. Clean, minimal design."</p>
+  <p>Then run three rounds of feedback:</p>
+  <ol>
+    <li>Find one thing that doesn't work the way you expected. Report it in plain English.</li>
+    <li>Find one thing you'd change about the design. Ask for it.</li>
+    <li>Add one feature you'd actually want: ("Add a way to mark all tasks complete at once" or "Show a count of how many tasks are left")</li>
+  </ol>
+  <p><strong>Reflect:</strong> What was the most effective feedback you gave and why?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 1-C: Describe Your User</span>
+  <p><strong>Goal:</strong> See how describing your user changes the output.</p>
+  <p>Build the same basic app twice — a simple expense tracker — with two different prompts:</p>
+  <p><strong>Version A:</strong> "Build an expense tracker app."</p>
+  <p><strong>Version B:</strong> "Build an expense tracker app for a college freshman living on a budget. They should be able to add an expense with a category (food, transportation, entertainment, etc.), amount, and date. Show a running total and a simple bar chart of spending by category. Keep the design friendly and encouraging, not sterile."</p>
+  <p>Compare the two results. What did specifying the user add? Save Version B — it's a real tool you could actually use.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 1-D: Your First Deployed App</span>
+  <p><strong>Goal:</strong> Put a real URL on something you built.</p>
+  <p>Take your best creation from Assignments 1-A through 1-C. Sign up for a free Vercel account (<a href="https://vercel.com" target="_blank" rel="noopener">vercel.com</a>). Follow Bolt.new's "Deploy" button to publish your app.</p>
+  <p>You should get a URL that looks like yourapp.vercel.app. Open it on your phone. Send it to a friend or family member.</p>
+  <p>That's a real app on the internet. You built it in a week.</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 2: Building Something Real (Week 2)</h2>
+
+<p><strong>Goal:</strong> Build a more complex, multi-feature app from scratch. Practice breaking big goals into a scaffolded sequence of prompts.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Watch: Traversy Media – Build a Web App with AI (search "Traversy Media vibe coding 2025")</li>
+  <li>Watch: Kevin Powell – Making Web Apps Look Good (search "Kevin Powell CSS beginner")</li>
+  <li>Read: "How I Built and Launched My First SaaS in 2 Weeks" — search for recent vibe coding case studies on Reddit r/SaaS or Indie Hackers</li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 2-A: Scope Your App</span>
+  <p><strong>Goal:</strong> Practice breaking a complete app into a buildable sequence.</p>
+  <p>Pick an app idea you'd actually use (or use this: a habit tracker, a study scheduler, a recipe organizer, a budget planner). Before touching Bolt.new, write out:</p>
+  <ol>
+    <li>What is the core thing it does? (1 sentence)</li>
+    <li>Who is it for? (be specific)</li>
+    <li>What are the 3–5 must-have features for a minimum working version?</li>
+    <li>What would a "nice to have" version add later?</li>
+    <li>What does the main screen look like? (describe it in words)</li>
+  </ol>
+  <p>Only after you've written this should you open Bolt.new. The quality of your planning directly determines the quality of your build.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 2-B: Build Your App in Phases</span>
+  <p><strong>Goal:</strong> Apply scaffolding to a full app build.</p>
+  <p>Using your scoped plan from 2-A, build your app in four distinct phases in Bolt.new:</p>
+  <p><strong>Phase 1 — Core structure:</strong> "Build the basic layout and main screen. No functionality yet, just the design and navigation."</p>
+  <p><strong>Phase 2 — Core feature:</strong> Add the single most important feature. One prompt per feature.</p>
+  <p><strong>Phase 3 — Polish:</strong> "Make the design cleaner. Add loading states. Make sure it works on mobile."</p>
+  <p><strong>Phase 4 — Edge cases:</strong> "What happens if the user hasn't added anything yet? Show an empty state with a helpful message. What if they try to submit an empty form? Show an error."</p>
+  <p><strong>Reflect:</strong> How did building in phases change the result compared to trying to describe everything at once?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 2-C: Fix a Real Bug</span>
+  <p><strong>Goal:</strong> Practice debugging — the skill that separates good vibe coders from frustrated ones.</p>
+  <p>Deliberately create a scenario that breaks your app (try something the app wasn't designed for — paste a very long piece of text, submit blank fields, click things rapidly). When it breaks, write a bug report in this format:</p>
+  <blockquote>
+  <p>"When I do [exact steps], the app [what happens]. It should instead [what it should do]. Here's a screenshot description: [describe what you see]."</p>
+  </blockquote>
+  <p>Give this to Bolt.new and watch it fix the bug. How precise does your bug report need to be for the AI to fix it correctly?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 2-D: Add a Database</span>
+  <p><strong>Goal:</strong> Learn how to store data so it persists after the page refreshes.</p>
+  <p>Currently, everything you've built disappears when you refresh the page. Fix that.</p>
+  <p>Sign up for a free Supabase account (<a href="https://supabase.com" target="_blank" rel="noopener">supabase.com</a>). In Bolt.new, tell it: "I want to save the data in this app to Supabase so it persists after a refresh. Here are my Supabase credentials: [paste from Supabase dashboard]. Help me connect the app and migrate the data."</p>
+  <p>Follow its instructions. Refresh the page. Your data should still be there.</p>
+  <p><strong>Reflect:</strong> What does "persistent data" unlock? What kinds of apps become possible now that weren't before?</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 3: Design, Polish &amp; Professional Quality (Week 3)</h2>
+
+<p><strong>Goal:</strong> Elevate your apps from functional to something you'd actually be proud to show someone. Learn how to make things look good and feel professional.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Watch: Kevin Powell – CSS Beginner Course (search "Kevin Powell CSS full course" on YouTube)</li>
+  <li>Watch: Fireship – UI Design Tips for Developers (search "Fireship UI tips")</li>
+  <li>Reference: Refactoring UI (free article) — search "Refactoring UI tips Adam Wathan"</li>
+  <li>Tool to explore: shadcn/ui component library — <a href="https://ui.shadcn.com" target="_blank" rel="noopener">ui.shadcn.com</a> (ask Bolt.new to use it for professional-looking components)</li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 3-A: The Design Makeover</span>
+  <p><strong>Goal:</strong> Transform a functional-but-ugly app into something visually polished.</p>
+  <p>Take any app you've built so far. Ask Bolt.new to redesign it with this prompt: "Redesign the UI of this app to look professional and modern. Use a consistent color palette, good typography, proper spacing, and smooth hover states on interactive elements. It should look like something you'd pay for, not a student project. Reference the aesthetic of [pick one: Notion / Linear / Stripe / Apple] but don't copy it directly."</p>
+  <p>Before/after: Screenshot both versions. Write a sentence about what changed and why it matters.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 3-B: Mobile First</span>
+  <p><strong>Goal:</strong> Make your app work on a phone.</p>
+  <p>Open your app on your phone. What breaks? What's too small to tap? What overflows off screen?</p>
+  <p>Write a list of every mobile issue you find. Then give them all to Bolt.new at once: "Fix these mobile issues: [list]. The app should look and work great on a phone screen."</p>
+  <p>Check it again on your phone after each fix. Mobile responsiveness is non-negotiable for any real product.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 3-C: Empty States &amp; Error Messages</span>
+  <p><strong>Goal:</strong> Make your app feel finished, not rough.</p>
+  <p>A professional app handles every state gracefully:</p>
+  <ul>
+    <li><strong>Empty state</strong> — What shows when there's no data yet?</li>
+    <li><strong>Loading state</strong> — What shows while data is fetching?</li>
+    <li><strong>Error state</strong> — What shows when something goes wrong?</li>
+    <li><strong>Success state</strong> — What confirms to the user that their action worked?</li>
+  </ul>
+  <p>For your main app, ask Bolt.new to add proper handling for all four states. Each one should be helpful and friendly, not just a blank screen or a raw error code.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 3-D: User Accounts</span>
+  <p><strong>Goal:</strong> Add login so users have their own private data.</p>
+  <p>Using Supabase auth, add a login system to your app: "Add user authentication using Supabase. Users should be able to sign up with their email, log in, and log out. Each user should only see their own data — not other users' data."</p>
+  <p>Test it: create two accounts and make sure they're isolated. This is the foundation of any real multi-user app or SaaS product.</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 4: From Builder to Founder (Week 4)</h2>
+
+<p><strong>Goal:</strong> Think like someone who builds products for others. Identify a real problem, build something people would pay for, and understand the path from idea to revenue.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Watch: Alex Finn – How to Find SaaS Ideas (search "Alex Finn SaaS ideas 2025" on YouTube)</li>
+  <li>Watch: Indie Hackers – How I Built and Sold My First SaaS (search on YouTube)</li>
+  <li>Read: Indie Hackers website — <a href="https://www.indiehackers.com" target="_blank" rel="noopener">indiehackers.com</a> (real stories of people building small software businesses)</li>
+  <li>Reference: Product Hunt — <a href="https://www.producthunt.com" target="_blank" rel="noopener">producthunt.com</a> (browse what people are launching to get ideas)</li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 4-A: Find Your Idea</span>
+  <p><strong>Goal:</strong> Identify a real problem worth solving.</p>
+  <p>The best app ideas come from pain points — things that are currently annoying, manual, or broken. Run this brainstorm in Gemini (from Prompt Engineering 101): "Act as a startup ideation coach. Help me find a micro-SaaS idea by asking me questions about: my interests, my major, communities I belong to, things I do manually that are annoying, and things I've seen people around me struggle with. Ask me questions one at a time and help me narrow down to 3 viable ideas."</p>
+  <p>Have a full conversation. At the end: pick your favorite idea and write a one-paragraph pitch: what it does, who it's for, and why they'd pay for it.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 4-B: Build an MVP in a Day</span>
+  <p><strong>Goal:</strong> Ship something minimal but real.</p>
+  <p>Take your idea from 4-A and build the most stripped-down version possible in Bolt.new — just the core feature, nothing else. This is your Minimum Viable Product (MVP).</p>
+  <p>The rule: if it takes more than one day to build, it's not minimal enough. Cut features until it fits in a day.</p>
+  <p>Share the link with 3 people who match your target user. Ask them: "Would you use this? What's missing? Would you pay $X/month for it?"</p>
+  <p>Their answers are worth more than any amount of planning.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 4-C: Add Stripe Payments</span>
+  <p><strong>Goal:</strong> Learn how to charge money for your app.</p>
+  <p>This is the step that turns a project into a business.</p>
+  <p>Sign up for a Stripe account (<a href="https://stripe.com" target="_blank" rel="noopener">stripe.com</a> — free to set up, they take a small % of transactions). In Bolt.new: "Add a Stripe checkout to this app. When a new user signs up, they should be prompted to enter payment info for a $9/month subscription before accessing the app. Use Stripe's test mode so no real money is charged."</p>
+  <p>Test the full flow: sign up → payment screen → enter Stripe's test card number (4242 4242 4242 4242) → access the app.</p>
+  <p>You now know how to build a subscription business.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 4-D: Launch on Product Hunt</span>
+  <p><strong>Goal:</strong> Get your first real users.</p>
+  <p>This is optional but highly recommended: create a Product Hunt account (<a href="https://www.producthunt.com" target="_blank" rel="noopener">producthunt.com</a>) and submit your app from Assignment 4-B.</p>
+  <p>Write a launch post with:</p>
+  <ul>
+    <li>What it does (1 sentence)</li>
+    <li>Who it's for</li>
+    <li>What problem it solves</li>
+    <li>A short demo GIF or screenshot</li>
+  </ul>
+  <p>Even if you only get 10 visitors, this is real experience in launching a product. Many successful SaaS companies got their first customers from Product Hunt.</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Tips for Better Vibe Coding</h2>
+
+<div class="tips-box">
+<ol>
+  <li><strong>Start smaller than you think you need to.</strong> Every experienced builder says the same thing: the first version should feel embarrassingly simple. Get that live, then improve it.</li>
+  <li><strong>Name your files and describe your app structure early.</strong> Tell Bolt.new "this app is called X and it does Y for Z users" at the start of each conversation. Consistent context = better code.</li>
+  <li><strong>Copy what works.</strong> See an app or design you like? Tell the AI: "I want the sidebar to work like Notion's" or "the card layout should feel like Linear's." Using references is not cheating — it's how design works.</li>
+  <li><strong>Save every version that works.</strong> Before making big changes, export or fork your current project. Many vibe coders have made one wrong prompt and lost an hour of work. Treat it like Save before a boss fight.</li>
+  <li><strong>When the AI gets confused, start a fresh conversation.</strong> Long chats can lead the AI to "remember" wrong assumptions from earlier. A fresh start with clear context often fixes a frustrating loop.</li>
+  <li><strong>The gap between "it technically works" and "it's good" is design.</strong> Functional apps are table stakes. What makes something people actually use is how it looks and feels. Invest time in polish.</li>
+  <li><strong>Ship before you're ready.</strong> The feedback you get from real users in one week is worth more than two months of solo building. Launch ugly. Improve based on what you learn.</li>
+</ol>
+</div>
+
+<h2>Quick Reference: Key Terms</h2>
+
+<ul>
+  <li><strong>Frontend</strong> — The part of the app users see (buttons, pages, design)</li>
+  <li><strong>Backend</strong> — The part users don't see (database, servers, logic)</li>
+  <li><strong>Full-stack</strong> — Frontend + backend together</li>
+  <li><strong>Framework</strong> — A pre-built toolkit for building apps (React, Next.js, etc.)</li>
+  <li><strong>API</strong> — How apps talk to each other (like a waiter relaying your order to the kitchen)</li>
+  <li><strong>Deploy</strong> — Publishing your app so anyone on the internet can use it</li>
+  <li><strong>Repository (repo)</strong> — A folder of your code saved in GitHub</li>
+  <li><strong>Component</strong> — A reusable piece of UI (like a button or a card)</li>
+  <li><strong>SaaS</strong> — Software as a Service — an app people pay monthly to use</li>
+  <li><strong>MVP</strong> — Minimum Viable Product — the simplest version that actually works</li>
+  <li><strong>Supabase</strong> — A free service that stores your app's data and handles user logins</li>
+  <li><strong>Vercel</strong> — A free service that hosts your app and gives it a real URL</li>
+</ul>
+
+<h2>Further Reading &amp; Resources</h2>
+
+<h3>Key Tools</h3>
+
+<ul>
+  <li><a href="https://bolt.new" target="_blank" rel="noopener">Bolt.new</a> — Start here (no install needed)</li>
+  <li><a href="https://lovable.dev" target="_blank" rel="noopener">Lovable</a> — Polished UI-focused alternative to Bolt</li>
+  <li><a href="https://replit.com" target="_blank" rel="noopener">Replit</a> — Browser-based coding + AI</li>
+  <li><a href="https://cursor.com" target="_blank" rel="noopener">Cursor</a> — The go-to editor for serious vibe coders</li>
+  <li><a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> — Free database and auth</li>
+  <li><a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a> — Free hosting and deployment</li>
+  <li><a href="https://stripe.com" target="_blank" rel="noopener">Stripe</a> — Payments and subscriptions</li>
+</ul>
+
+<h3>YouTube Channels to Follow</h3>
+
+<ul>
+  <li>Alex Finn (@AlexFinnOfficial) — #1 vibe coding channel. No technical background required. Also at alexfinn.ai</li>
+  <li>Traversy Media (Brad Traversy) — Practical web development. Best when you want to understand WHY something works</li>
+  <li>Fireship — Fast, dense, current. Great for staying up to date on what tools are hot</li>
+  <li>Kevin Powell — The best teacher for making things look good. CSS and design focused</li>
+  <li>The Net Ninja — Slow, clear, comprehensive. Good if you want deeper fundamentals alongside vibe coding</li>
+</ul>
+
+<h3>Communities</h3>
+
+<ul>
+  <li>Indie Hackers — <a href="https://www.indiehackers.com" target="_blank" rel="noopener">indiehackers.com</a> — Real stories from people building small software businesses</li>
+  <li>r/SaaS on Reddit — Founders sharing what they've built and lessons learned</li>
+  <li>Product Hunt — <a href="https://www.producthunt.com" target="_blank" rel="noopener">producthunt.com</a> — Where people launch new products; great for ideas and early users</li>
+</ul>
+
+<div class="divider">· · ·</div>
+
+<p><em>Part 3 of the AI Fundamentals Series: Prompt Engineering 101 → Scaffolding 101 → Vibe Code 101.</em></p>
+
+<p><em><a href="scaffolding-101.html">&larr; Previous: Scaffolding 101</a></em></p>
+
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Docotia Enterprises LLC</span>
+    <span>
+      <a href="../index.html">Home</a> &nbsp;&middot;&nbsp;
+      <a href="../press.html">Press</a> &nbsp;&middot;&nbsp;
+      <a href="../labs.html">Labs</a> &nbsp;&middot;&nbsp;
+      <a href="index.html">Learning</a> &nbsp;&middot;&nbsp;
+      <a href="../privacy.html">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="mailto:learning@docotia.com">learning@docotia.com</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const primaryNav = document.getElementById('primaryNav');
+menuToggle.addEventListener('click', () => {
+  const isOpen = primaryNav.classList.toggle('open');
+  menuToggle.classList.toggle('open', isOpen);
+  menuToggle.setAttribute('aria-expanded', isOpen);
+});
+primaryNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  primaryNav.classList.remove('open');
+  menuToggle.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}));
+</script>
+</body>
+</html>

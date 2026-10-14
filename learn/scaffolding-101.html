@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scaffolding 101 — Docotia Learning</title>
+<meta name="description" content="A free 4-week course on prompt scaffolding. Learn to build structured AI workflows with templates, prompt chains, frameworks, and reusable systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=a1b2c3d4">
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <div class="brand">
+      <div class="mark"><img src="../assets/docotia-press-logo.png" alt="Docotia"></div>
+      <span class="name">Docotia</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary" id="primaryNav">
+      <a href="../index.html">Home</a>
+      <a href="../press.html">Docotia Press</a>
+      <a href="../labs.html">Docotia Labs</a>
+      <a href="index.html">Docotia Learning</a>
+    </nav>
+  </div>
+</header>
+
+<section class="course-header">
+  <div class="wrap">
+    <span class="tag">Course 2 · Free</span>
+    <h1>Scaffolding 101</h1>
+    <p class="subtitle">Building Structured AI Workflows for the Real World</p>
+    <p class="updated">Last updated: October 2026</p>
+  </div>
+</section>
+
+<div class="course-body">
+
+<p>If Prompt Engineering 101 taught you how to write one really good sentence, Scaffolding 101 teaches you how to write the whole book.</p>
+
+<p>A single well-crafted prompt is powerful. But real-world tasks — writing a research paper, planning a project, preparing for an exam, running a consulting meeting — don't happen in one step. Scaffolding is the practice of building structure around your AI interactions: frameworks, templates, sequences, and repeatable systems that produce consistent, high-quality results every time you use them.</p>
+
+<p>This is the skill that separates people who occasionally get something useful out of AI from people who use AI as a genuine productivity multiplier. Welcome to the next level.</p>
+
+<div class="divider">· · ·</div>
+
+<h2>What is Scaffolding?</h2>
+
+<p>In construction, scaffolding is the temporary structure that lets workers build something bigger than they could reach on their own. In AI, it means the same thing.</p>
+
+<p>Prompt scaffolding is the practice of wrapping your AI interactions in structure — predefined roles, templates, constraints, step sequences, and frameworks — so that you get predictable, reusable, high-quality outputs rather than random results.</p>
+
+<h3>Prompt Engineering vs. Scaffolding</h3>
+
+<p>Think of it this way:</p>
+
+<ul>
+  <li>Prompt engineering = writing one excellent instruction</li>
+  <li>Scaffolding = building a system of instructions that work together</li>
+</ul>
+
+<p>The difference in practice:</p>
+
+<ul>
+  <li>A one-time prompt gets you an answer. A scaffold gets you a process.</li>
+  <li>A single question produces a single response. A multi-step sequence produces a complete deliverable.</li>
+  <li>An improvised prompt is used once. A designed scaffold is tested, saved, and reused.</li>
+</ul>
+
+<p>You need both. This course teaches the layer on top.</p>
+
+<h2>What You'll Need</h2>
+
+<ul>
+  <li>Google account (free)</li>
+  <li>Google Gemini — <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a></li>
+  <li>A document to save your templates — Google Docs, Notion, or even a notes app</li>
+  <li>Prompt Engineering 101 completed (or basic familiarity with prompting)</li>
+  <li>No coding required</li>
+</ul>
+
+<h2>The Fundamentals</h2>
+
+<h3>1. Templates — Reusable Prompt Structures</h3>
+
+<p>A template is a prompt with blank fields you fill in each time. Instead of writing a new prompt from scratch, you fill in the variable parts.</p>
+
+<p><strong>Basic template structure:</strong></p>
+
+<blockquote>
+<p>"Act as a [ROLE]. I need help with [TASK]. My audience is [AUDIENCE]. Keep the tone [TONE]. Format the output as [FORMAT]. Here's the context: [CONTEXT]."</p>
+</blockquote>
+
+<p><strong>Example filled in:</strong></p>
+
+<blockquote>
+<p>"Act as a writing tutor. I need help improving this paragraph. My audience is a college professor. Keep the tone formal and academic. Format the output as the revised paragraph followed by bullet-point notes explaining your changes. Here's the context: [paste paragraph]"</p>
+</blockquote>
+
+<p>Templates are the foundation of scaffolding. You build them once, use them hundreds of times.</p>
+
+<h3>2. Prompt Chaining — Multi-Step Sequences</h3>
+
+<p>Prompt chaining means breaking a complex task into a sequence of connected prompts, where each output feeds into the next input.</p>
+
+<p><strong>Example chain for writing a research paper:</strong></p>
+
+<ol>
+  <li>"Help me brainstorm 5 possible thesis statements for an essay about [topic]."</li>
+  <li>"I'm going with option 3. Now create a detailed outline with 3 body sections."</li>
+  <li>"Write the introduction paragraph based on this thesis and outline."</li>
+  <li>"Write body section 1. Use evidence-based arguments and cite real reasoning."</li>
+  <li>"Review the full draft and suggest improvements to flow and argument strength."</li>
+</ol>
+
+<p>Each prompt is simple. Chained together, they produce something sophisticated. This is the core engine of scaffolding.</p>
+
+<h3>3. Context-Setting — Building a Persistent Foundation</h3>
+
+<p>Before diving into a task, give the AI a full picture of who you are, what you're doing, and what you need. This "context block" sits at the top of any serious scaffolded workflow.</p>
+
+<p><strong>Context block template:</strong></p>
+
+<blockquote>
+<p>"Here's my context before we begin: I am [who you are]. I am working on [project/task]. My goal is [desired outcome]. My constraints are [limitations]. My audience is [who will see this]. Please keep this context in mind for everything that follows."</p>
+</blockquote>
+
+<p>Once you've set context, every follow-up prompt benefits from that foundation without you having to repeat yourself.</p>
+
+<h3>4. Named Frameworks — BRIDGE, 4D, CLEAR</h3>
+
+<p>Research-backed frameworks give you a checklist to make sure your scaffold is complete.</p>
+
+<p><strong>The BRIDGE Framework (6-part system):</strong></p>
+
+<ul>
+  <li><strong>B</strong>ackground — relevant context the AI needs</li>
+  <li><strong>R</strong>equest — what specifically you want</li>
+  <li><strong>I</strong>nputs — data, examples, or text to work with</li>
+  <li><strong>D</strong>eliverables — what the output should look like</li>
+  <li><strong>G</strong>uardrails — what to avoid or constraints to follow</li>
+  <li><strong>E</strong>valuation — how you'll judge if it's good</li>
+</ul>
+
+<p><strong>The 4D Framework (simplified):</strong></p>
+
+<ul>
+  <li><strong>D</strong>elegation — what task you're handing to the AI</li>
+  <li><strong>D</strong>escription — how to explain it clearly</li>
+  <li><strong>D</strong>iscernment — how to check the output</li>
+  <li><strong>D</strong>iligence — how to use the result responsibly</li>
+</ul>
+
+<p><strong>CLEAR Prompt Design:</strong></p>
+
+<ul>
+  <li><strong>C</strong>oncise — no fluff</li>
+  <li><strong>L</strong>ogical — structured and ordered</li>
+  <li><strong>E</strong>xplicit — leave no room for guesswork</li>
+  <li><strong>A</strong>daptive — built to be refined</li>
+  <li><strong>R</strong>eflective — designed to prompt real thinking</li>
+</ul>
+
+<p>Pick one framework and apply it consistently. BRIDGE is the most comprehensive; 4D is easiest to remember.</p>
+
+<h3>5. Constraint Setting — Guardrails That Improve Output</h3>
+
+<p>Most beginners tell the AI what to do. Advanced scaffolders also tell the AI what NOT to do.</p>
+
+<p>Adding constraints dramatically improves output consistency:</p>
+
+<ul>
+  <li>"Do not use bullet points — use full paragraphs only."</li>
+  <li>"Do not mention any specific brands or products."</li>
+  <li>"Keep this under 300 words."</li>
+  <li>"Do not give me the final answer — only ask me guiding questions."</li>
+  <li>"Do not fabricate statistics or citations. If you don't know, say so."</li>
+</ul>
+
+<h3>6. Gradual Release — Scaffolding That Fades</h3>
+
+<p>One of the most powerful uses of AI scaffolding in education is building workflows that give you more support when you need it and less as you improve.</p>
+
+<p>The goal is independent mastery, not AI dependency. Structure your scaffold so that over time, you remove layers and do more yourself.</p>
+
+<p><strong>Example progression for writing:</strong></p>
+
+<ul>
+  <li>Week 1: AI writes full outline + draft paragraph + suggestions</li>
+  <li>Week 2: AI writes outline only, you write draft</li>
+  <li>Week 3: You write draft, AI gives feedback only</li>
+  <li>Week 4: You write everything, AI does final review</li>
+</ul>
+
+<h3>7. The Prompt Library — Your Personal System</h3>
+
+<p>A prompt library is a personal collection of your best scaffolded templates, organized by task type. It's the difference between building a scaffold from scratch every time versus pulling one off the shelf.</p>
+
+<p>Start with 5 templates for tasks you do regularly. Add to it each week. This becomes one of the most valuable tools you'll build in college.</p>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 1: Your First Scaffolds (Week 1)</h2>
+
+<p><strong>Goal:</strong> Build your first reusable templates and understand how structure changes everything.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Read first: <a href="https://godofprompt.ai/blog/what-is-prompt-scaffolding/" target="_blank" rel="noopener">What is Prompt Scaffolding?</a> (God of Prompt)</li>
+  <li>Watch (45 min): <a href="https://www.youtube.com/watch?v=PDgtKkuHxu0" target="_blank" rel="noopener">Master AI Prompt Writing — The BRIDGE Framework</a> (Maven Analytics)</li>
+  <li>Reference: <a href="https://www.aiforeducation.io/prompts/create-scaffolds-and-extensions" target="_blank" rel="noopener">AI for Education Scaffolding Guide</a></li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 1-A: Build Your First Template</span>
+  <p><strong>Goal:</strong> Turn a one-time prompt into a reusable template.</p>
+  <p>Think of a task you'll do repeatedly in college (writing emails to professors, studying for tests, summarizing readings, etc.). Write a single prompt that handles it well. Then abstract it — replace the specific parts with [BRACKETS] to create a reusable template.</p>
+  <p><strong>Example:</strong> "Summarize this article about climate change in 3 bullet points" becomes: "Summarize the following [TYPE OF CONTENT] about [TOPIC] in [NUMBER] bullet points. Highlight the most important takeaway in bold. Here's the content: [PASTE HERE]"</p>
+  <p>Save this template. You've just built your first scaffold.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 1-B: Apply the BRIDGE Framework</span>
+  <p><strong>Goal:</strong> Build a complete, structured prompt using the BRIDGE system.</p>
+  <p>Pick a real task (an upcoming paper, a study guide, a presentation). Apply all six elements of BRIDGE:</p>
+  <ul>
+    <li><strong>B</strong> — Write 2–3 sentences of background</li>
+    <li><strong>R</strong> — State your exact request</li>
+    <li><strong>I</strong> — Paste any input material</li>
+    <li><strong>D</strong> — Describe the output format</li>
+    <li><strong>G</strong> — Add 2 constraints (what to avoid)</li>
+    <li><strong>E</strong> — State how you'll judge the output</li>
+  </ul>
+  <p>Feed the full BRIDGE prompt into Gemini. Compare the result to a simple version of the same request. Write down: what did BRIDGE add?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 1-C: The Constraint Experiment</span>
+  <p><strong>Goal:</strong> Discover how constraints shape output.</p>
+  <p>Take any prompt you've used before. Ask Gemini the same thing 3 times with different constraint sets:</p>
+  <ol>
+    <li>No constraints added</li>
+    <li>Format constraints only ("respond in a numbered list, under 200 words, academic tone")</li>
+    <li>Content + format constraints ("no bullet points, no jargon, write for a 10th grader, under 150 words")</li>
+  </ol>
+  <p><strong>Which version of the output is most useful for your actual purpose?</strong> What does this tell you about constraint-setting?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 1-D: Context Block Practice</span>
+  <p><strong>Goal:</strong> Write a context block for a real project and use it across multiple prompts.</p>
+  <p>Write a 3–5 sentence context block for a real ongoing project (a class you're taking, a club you're in, a job application you're working on). Paste it at the top of a Gemini conversation. Then ask 3 different follow-up questions without repeating the context.</p>
+  <p><strong>Observe:</strong> Does Gemini maintain context accurately? Where does it drift or forget? What does this tell you about the limits of AI memory in a conversation?</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 2: Prompt Chaining &amp; Multi-Step Workflows (Week 2)</h2>
+
+<p><strong>Goal:</strong> Build your first multi-step prompt chain and apply it to a complete real-world deliverable.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Watch: <a href="https://www.youtube.com/watch?v=hmn1mNbAnq8" target="_blank" rel="noopener">Academia Insider – 10 Crystal-Clear AI Prompts for College</a></li>
+  <li>Read: <a href="https://andrewmayneprompts.pages.dev/posts/29-scaffolding-long-form-content/" target="_blank" rel="noopener">Andrew Mayne – Scaffolding Long-Form Content</a></li>
+  <li>Free course (covers chaining): <a href="https://www.udemy.com/course/prompt-engineering-masterclass-ai" target="_blank" rel="noopener">Udemy Prompt Engineering Masterclass</a></li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 2-A: The 5-Step Essay Chain</span>
+  <p><strong>Goal:</strong> Build a scaffolded chain that produces a complete essay draft.</p>
+  <p>For any essay you have coming up (or create a topic), build and run this 5-prompt chain in Gemini:</p>
+  <ol>
+    <li>"Brainstorm 5 angles I could take on this topic: [topic]. Give me a one-sentence thesis for each."</li>
+    <li>"I'm going with angle [X]. Create a full outline with intro, 3 body sections with sub-points, and conclusion."</li>
+    <li>"Write the introduction paragraph using this thesis and outline. Make it engaging — not generic."</li>
+    <li>"Write body section 1. Support the argument with logic and real-world examples."</li>
+    <li>"Now review everything we've written. What's the weakest part of the argument and how would you strengthen it?"</li>
+  </ol>
+  <p><strong>Reflect:</strong> Could you have gotten this result with one prompt? What did the chain give you that a single prompt couldn't?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 2-B: The Study Session Chain</span>
+  <p><strong>Goal:</strong> Build a complete study scaffold for any subject.</p>
+  <p>Before your next exam or quiz, run this chain for the subject you're studying:</p>
+  <ol>
+    <li>"Act as a professor of [subject]. I'm a college freshman studying [specific topic]. What are the 10 most important concepts I need to understand?"</li>
+    <li>"For each concept, give me a one-sentence plain-English explanation and one real-world analogy."</li>
+    <li>"Create 15 quiz questions covering these concepts. Mix multiple choice, short answer, and true/false."</li>
+    <li>"I'm going to answer these questions out loud. For each one I get wrong, give me an explanation of the correct answer and a memory tip."</li>
+    <li>"Based on our session, what are my 3 weakest areas and what should I review tonight?"</li>
+  </ol>
+  <p>This is a complete study session scaffold. Save it. Use it before every major exam.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 2-C: Decision-Making Chain</span>
+  <p><strong>Goal:</strong> Use scaffolding to think through a real decision.</p>
+  <p>Pick a real decision you're facing (choosing a major, deciding on a class schedule, a big purchase, a career path). Run this chain:</p>
+  <ol>
+    <li>"I'm trying to decide between [option A] and [option B]. What key factors should I consider? Give me 5–7 criteria."</li>
+    <li>"For each criterion, rate both options on a scale of 1–10 and explain the rating."</li>
+    <li>"What information am I missing that would help me decide? What should I research?"</li>
+    <li>"What would you recommend and why? What's the biggest risk of each choice?"</li>
+    <li>"Play devil's advocate: make the best case for the option you didn't recommend."</li>
+  </ol>
+  <p>Notice how chaining forces the AI to think thoroughly instead of jumping to a surface answer.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 2-D: Build a Research Scaffold</span>
+  <p><strong>Goal:</strong> Use chaining to research any topic thoroughly.</p>
+  <p>Pick a topic you need to understand for class (or personal interest). Run:</p>
+  <ol>
+    <li>"Give me a broad overview of [topic] in 5 bullet points — key facts and context only."</li>
+    <li>"What are the 3 major debates or open questions in this field?"</li>
+    <li>"Who are the 3–5 most important thinkers, researchers, or organizations working on this? What's their contribution?"</li>
+    <li>"What are the most common misconceptions about this topic that a beginner might have?"</li>
+    <li>"Summarize everything we've covered in 2–3 paragraphs I could use as background notes."</li>
+  </ol>
+  <p>This is a research scaffold. It replaces 30 minutes of scattered Googling with a structured deep-dive.</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 3: Templates, Libraries &amp; Repeatable Systems (Week 3)</h2>
+
+<p><strong>Goal:</strong> Build a personal prompt library, design templates for your most common tasks, and start thinking about AI as a system you maintain — not just a tool you use.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Read: <a href="https://www.structural-learning.com/post/ai-prompts-blooms-taxonomy-teachers-guide" target="_blank" rel="noopener">Structural Learning — AI Prompts and Bloom's Taxonomy</a></li>
+  <li>Watch: <a href="https://www.youtube.com/watch?v=wbGKfAPlZVA" target="_blank" rel="noopener">Reedley College – Creating Prompts for Academic AI Use</a></li>
+  <li>Reference: <a href="https://www.eweek.com/news/prompt-engineering-cheat-sheet-guide/" target="_blank" rel="noopener">eWeek – Prompt Engineering Cheat Sheet</a></li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 3-A: Build Your Prompt Library</span>
+  <p><strong>Goal:</strong> Create a personal reference document of your 10 best templates.</p>
+  <p>Create a new Google Doc called "My Prompt Library." Build and test 10 templates across these categories:</p>
+  <ul>
+    <li>2 academic writing templates (essay intro, paragraph review)</li>
+    <li>2 study/learning templates (flashcard maker, concept explainer)</li>
+    <li>2 communication templates (professional email, networking message)</li>
+    <li>2 brainstorming templates (idea generation, decision-making)</li>
+    <li>2 wildcard templates for tasks you personally do often</li>
+  </ul>
+  <p>For each template: test it in Gemini, refine it at least once, and note what it's best used for.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 3-B: The Bloom's Taxonomy Scaffold</span>
+  <p><strong>Goal:</strong> Use higher-order thinking levels to deepen your understanding of any subject.</p>
+  <p>Bloom's Taxonomy ranks thinking skills from basic to advanced: Remember → Understand → Apply → Analyze → Evaluate → Create. Design one prompt for each level on a topic you're currently studying.</p>
+  <p><strong>Example topic: The American Civil War</strong></p>
+  <ol>
+    <li><strong>Remember:</strong> "List 10 key facts about the American Civil War."</li>
+    <li><strong>Understand:</strong> "Explain the causes of the Civil War in your own words."</li>
+    <li><strong>Apply:</strong> "How could the political causes of the Civil War apply to modern political divisions?"</li>
+    <li><strong>Analyze:</strong> "Compare Lincoln's and Jefferson Davis's leadership styles during the war."</li>
+    <li><strong>Evaluate:</strong> "Was the Emancipation Proclamation a moral act, a political strategy, or both? Defend your answer."</li>
+    <li><strong>Create:</strong> "Write a short alternate history paragraph: what if the South had won the Battle of Gettysburg?"</li>
+  </ol>
+  <p>Running all 6 gives you a complete, deep understanding of any topic. Save this as a reusable framework.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 3-C: The Feedback Loop Scaffold</span>
+  <p><strong>Goal:</strong> Use AI as a structured writing coach.</p>
+  <p>Take any piece of writing you've done (an essay, an email, a personal statement). Run it through this feedback scaffold:</p>
+  <ol>
+    <li>"Read this draft and summarize what you think the main argument or purpose is."</li>
+    <li>"What are the 3 strongest parts of this draft and why?"</li>
+    <li>"What are the 3 weakest parts and how would you improve each one?"</li>
+    <li>"Rewrite the weakest paragraph using your suggestions."</li>
+    <li>"Now review the opening sentence only. Give me 3 alternative versions that are more compelling."</li>
+  </ol>
+  <p>Compare your original to the AI's feedback. How much would this feedback cost if you hired a writing tutor?</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 3-D: The Socratic Scaffold</span>
+  <p><strong>Goal:</strong> Build a scaffold that makes you think rather than making the AI think for you.</p>
+  <p>For a topic you're supposed to learn (not just get an answer about), set up this Socratic mode:</p>
+  <p>Start with: "You are my Socratic tutor for [subject/topic]. Your job is to help me understand this through questions, not answers. Do not give me direct answers — only ask me questions that guide me to figure it out myself. Begin by asking me what I already know."</p>
+  <p>Have a full 10-exchange conversation. At the end, ask: "What are the key things I figured out in this conversation? What should I still work on?"</p>
+  <p><strong>Reflect:</strong> How is this different from just asking for the answer? When would you use this scaffold?</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Module 4: Real-World Scaffolding for College Life (Week 4)</h2>
+
+<p><strong>Goal:</strong> Apply scaffolding to the real, messy situations of college life — academics, relationships, career, and personal productivity.</p>
+
+<h3>Resources for This Module</h3>
+
+<ul>
+  <li>Read: <a href="https://www.aipromptlibrary.app/blog/ai-prompts-best-practices" target="_blank" rel="noopener">God of Prompt AI Best Practices</a></li>
+  <li>Watch: <a href="https://www.youtube.com/watch?v=_xlMn5-uD58" target="_blank" rel="noopener">Wharton Interactive — Practical AI for Students</a></li>
+  <li>Reference: <a href="https://medium.com/@ThinkingLoop/12-templates-for-teaching-with-ai-that-students-dont-hate-79d4ac97f73a" target="_blank" rel="noopener">12 AI Templates Students Actually Use</a> (Medium)</li>
+</ul>
+
+<div class="assignment">
+  <span class="label">Assignment 4-A: The Semester Planning Scaffold</span>
+  <p><strong>Goal:</strong> Build an AI-assisted plan for an entire academic semester.</p>
+  <p>At the start of each semester, run this planning chain:</p>
+  <ol>
+    <li>"Here are my classes for the semester: [list them]. Based on typical college courses, what are the major deliverables I should expect for each?"</li>
+    <li>"Help me create a week-by-week study schedule that distributes the workload evenly. Assume finals are in week 16."</li>
+    <li>"What are the 5 biggest academic risks I should watch for this semester based on this course load?"</li>
+    <li>"What habits or systems should I put in place in week 1 that will make week 14 much easier?"</li>
+    <li>"Create a 'semester start' checklist — things to do in the first two weeks to set myself up for success."</li>
+  </ol>
+  <p>Run this every semester. Your future self will thank you.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 4-B: The Job Application Scaffold</span>
+  <p><strong>Goal:</strong> Build a complete, reusable job application system.</p>
+  <p>Build and test a 5-step job application scaffold:</p>
+  <ol>
+    <li>"Here's a job posting: [paste posting]. What are the 5 most important skills and qualities they're looking for?"</li>
+    <li>"Here's my resume: [paste or summarize]. How well do I match those 5 requirements? What gaps should I address?"</li>
+    <li>"Write a cover letter opening paragraph that connects my background directly to their top 2 requirements."</li>
+    <li>"What are 3 likely interview questions for this role? Give me a strong answer framework for each."</li>
+    <li>"What questions should I ask the interviewer to demonstrate genuine interest and strategic thinking?"</li>
+  </ol>
+  <p>This scaffold is worth more than most career prep workshops. Save and refine it.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 4-C: The Personal Productivity Scaffold</span>
+  <p><strong>Goal:</strong> Design a weekly AI-assisted review system.</p>
+  <p>Every Sunday evening, run this 5-prompt weekly review:</p>
+  <ol>
+    <li>"I'm doing a weekly review. Here's what I accomplished this week: [list]. Here's what I didn't finish: [list]. Help me identify patterns — what's working and what's not?"</li>
+    <li>"Here's my list of things to do next week: [list]. Help me prioritize these by importance and urgency."</li>
+    <li>"What are 3 things I keep avoiding and what might be the underlying reason?"</li>
+    <li>"Based on this week, what is one habit I should start or stop to be more effective?"</li>
+    <li>"Give me a 3-sentence motivational framing for next week based on my current goals."</li>
+  </ol>
+  <p>This is your personal operating system. Consistent weekly use compounds massively over a semester.</p>
+</div>
+
+<div class="assignment">
+  <span class="label">Assignment 4-D: Build Your Master Scaffold</span>
+  <p><strong>Goal:</strong> Design one complete, original scaffold for the most important recurring task in your life right now.</p>
+  <p>Think about the task you do most often that's hardest, most stressful, or most important. Design a complete scaffold for it from scratch:</p>
+  <ol>
+    <li>Write a context block (who you are, what you're working on)</li>
+    <li>Design a 4–6 step prompt chain that takes you from starting point to finished output</li>
+    <li>Add at least 3 constraints to keep the output on track</li>
+    <li>Test the full scaffold in Gemini</li>
+    <li>Iterate — run it twice, improve it based on the first result</li>
+  </ol>
+  <p>Document the final scaffold in your Prompt Library. This is your capstone assignment.</p>
+</div>
+
+<div class="divider">· · ·</div>
+
+<h2>Tips for Building Better Scaffolds</h2>
+
+<div class="tips-box">
+<ol>
+  <li><strong>Start with the output and work backward.</strong> Before writing a single prompt, ask: "What does the finished thing look like?" Then design your chain to get there.</li>
+  <li><strong>Test with real tasks, not made-up ones.</strong> Your best scaffolds will come from solving actual problems you're facing. Theory is no substitute for practice.</li>
+  <li><strong>Save every scaffold that works.</strong> Even if it's rough, save it. One well-designed scaffold used 50 times is worth more than 50 one-off prompts.</li>
+  <li><strong>Add constraints incrementally.</strong> Start with a minimal scaffold and add constraints one at a time based on where the AI goes wrong. Over-constraining upfront is its own problem.</li>
+  <li><strong>Build scaffolds that teach you, not just do things for you.</strong> The best scaffolds make you smarter. A scaffold that just produces output you paste without reading is an academic integrity risk and a wasted learning opportunity.</li>
+  <li><strong>Update your Prompt Library monthly.</strong> What works in September might need updating by December as you get better. Treat it like a living document.</li>
+  <li><strong>Share scaffolds that work.</strong> If you build something that's genuinely useful, share it with classmates. A scaffold is not a cheat — it's a tool. Sharing tools is how skills spread.</li>
+</ol>
+</div>
+
+<h2>Further Reading &amp; Resources</h2>
+
+<h3>Core Articles</h3>
+
+<ul>
+  <li><a href="https://godofprompt.ai/blog/what-is-prompt-scaffolding/" target="_blank" rel="noopener">What is Prompt Scaffolding?</a> (God of Prompt)</li>
+  <li><a href="https://www.aipromptlibrary.app/blog/ai-prompts-best-practices" target="_blank" rel="noopener">AI Prompts Best Practices 2026</a></li>
+  <li><a href="https://www.eweek.com/news/prompt-engineering-cheat-sheet-guide/" target="_blank" rel="noopener">eWeek Prompt Engineering Cheat Sheet</a></li>
+  <li><a href="https://andrewmayneprompts.pages.dev/posts/29-scaffolding-long-form-content/" target="_blank" rel="noopener">Scaffolding Long-Form Content</a> (Andrew Mayne)</li>
+  <li><a href="https://www.structural-learning.com/post/ai-prompts-blooms-taxonomy-teachers-guide" target="_blank" rel="noopener">Bloom's Taxonomy &amp; AI Prompts</a></li>
+  <li><a href="https://www.aiforeducation.io/prompts/create-scaffolds-and-extensions" target="_blank" rel="noopener">AI for Education — Create Scaffolds &amp; Extensions</a></li>
+  <li><a href="https://medium.com/@ThinkingLoop/12-templates-for-teaching-with-ai-that-students-dont-hate-79d4ac97f73a" target="_blank" rel="noopener">12 AI Templates Students Actually Use</a> (Medium)</li>
+</ul>
+
+<h3>YouTube Videos</h3>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=PDgtKkuHxu0" target="_blank" rel="noopener">BRIDGE Framework – Maven Analytics</a> (45 min)</li>
+  <li><a href="https://www.youtube.com/watch?v=hmn1mNbAnq8" target="_blank" rel="noopener">10 AI Prompts for College Students – Academia Insider</a></li>
+  <li><a href="https://www.youtube.com/watch?v=_xlMn5-uD58" target="_blank" rel="noopener">Practical AI for Students – Wharton Interactive</a></li>
+  <li><a href="https://www.youtube.com/watch?v=wbGKfAPlZVA" target="_blank" rel="noopener">Creating Prompts for Academic Use – Reedley College</a></li>
+</ul>
+
+<h3>Free Courses</h3>
+
+<ul>
+  <li><a href="https://www.udemy.com/course/prompt-engineering-masterclass-ai" target="_blank" rel="noopener">Udemy – Prompt Engineering Masterclass</a> (free, covers scaffolding)</li>
+  <li><a href="https://www.coursera.org/specializations/prompting-essentials-google" target="_blank" rel="noopener">Google Prompting Essentials – Coursera</a></li>
+  <li><a href="https://learnprompting.org" target="_blank" rel="noopener">Learn Prompting</a> (full reference)</li>
+</ul>
+
+<div class="divider">· · ·</div>
+
+<p><em>Part 2 of the AI Fundamentals Series. Companion to Prompt Engineering 101. Uses Google Gemini (free) for all assignments.</em></p>
+
+<p><em><a href="prompt-engineering-101.html">&larr; Previous: Prompt Engineering 101</a> · <a href="vibe-code-101.html">Next: Vibe Code 101 &rarr;</a></em></p>
+
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Docotia Enterprises LLC</span>
+    <span>
+      <a href="../index.html">Home</a> &nbsp;&middot;&nbsp;
+      <a href="../press.html">Press</a> &nbsp;&middot;&nbsp;
+      <a href="../labs.html">Labs</a> &nbsp;&middot;&nbsp;
+      <a href="index.html">Learning</a> &nbsp;&middot;&nbsp;
+      <a href="../privacy.html">Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="mailto:learning@docotia.com">learning@docotia.com</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const primaryNav = document.getElementById('primaryNav');
+menuToggle.addEventListener('click', () => {
+  const isOpen = primaryNav.classList.toggle('open');
+  menuToggle.classList.toggle('open', isOpen);
+  menuToggle.setAttribute('aria-expanded', isOpen);
+});
+primaryNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  primaryNav.classList.remove('open');
+  menuToggle.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}));
+</script>
+</body>
+</html>
