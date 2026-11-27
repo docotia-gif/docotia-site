@@ -3,11 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Docotia Labs &mdash; Coming Soon</title>
+<title>Docotia Labs &mdash; Amputee BMI and LimbView</title>
 <meta name="description" content="Docotia Labs builds software by non-programmers, starting with the Amputee BMI calculator.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=c7f7449a">
+<style>
+.app-listing{display:flex;gap:28px;align-items:center;margin:32px 0;flex-wrap:wrap;}
+.app-icon{width:180px;flex:0 0 180px;}
+.app-icon img{width:100%;border-radius:40px;box-shadow:0 6px 18px rgba(0,0,0,.12);}
+.app-meta{flex:1 1 300px;font-family:'Inter',sans-serif;}
+.app-meta h3{font-family:'Cormorant Garamond',serif;font-size:2.2rem;margin:0 0 4px;}
+.app-meta .by{color:var(--gray);margin-bottom:18px;font-size:.95rem;}
+.app-meta p{color:var(--ink-soft);}
+.app-meta .buy-row{display:flex;gap:14px;margin:22px 0 0;flex-wrap:wrap;}
+</style>
 </head>
 <body>
 
@@ -36,7 +46,17 @@
     <h1>Software, built by non-programmers.</h1>
     <p>Docotia Labs is where we build tools that solve real problems for real people. Our first release, the <strong>Amputee BMI calculator</strong>, is a free web tool that adjusts body mass index for limb loss after amputation &mdash; something standard BMI calculators get wrong. Try it now at <a href="https://amputeebmi.com">amputeebmi.com</a>, or <a href="amputeebmi.html">see the app in action</a>.</p>
     <p><strong>LimbView</strong>, a session logger for mirror imagery practice, is coming soon to the App Store. <a href="limbview.html">Learn more about LimbView</a>.</p>
-    <p><strong>Amputee BMI</strong> is now on the App Store: <a href="https://apps.apple.com/us/app/amputee-bmi/id6818926556" target="_blank" rel="noopener">download the iOS app</a>.</p>
+    <div class="app-listing">
+      <div class="app-icon"><img src="assets/amputee-bmi-icon.jpg" alt="Amputee BMI app icon"></div>
+      <div class="app-meta">
+        <h3>Amputee BMI</h3>
+        <div class="by">Free on the App Store &middot; Docotia Enterprises LLC</div>
+        <p>A free BMI calculator that adjusts for limb loss after amputation. All calculations run on your device.</p>
+        <div class="buy-row">
+          <a class="btn primary" href="https://apps.apple.com/us/app/amputee-bmi/id6818926556" target="_blank" rel="noopener">Download on the App Store</a>
+        </div>
+      </div>
+    </div>
     <p>More session tools for visual practice are in development. Check back soon.</p>
   </div>
 </section>
